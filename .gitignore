@@ -1,0 +1,33 @@
+# Secrets
+.env
+
+# Large datasets and raw images
+dataset/
+dataset_augmented/
+dataset_augmented.zip
+Healthy/
+Mixed_Infected/
+Single_Infected/
+
+# Trained model weights (large binary files)
+models/
+
+# ChromaDB vector store (rebuilt by phase6_index.py)
+rag_db/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Claude internal
+.claude/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

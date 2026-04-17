@@ -1,0 +1,81 @@
+MUSHROOM SPECIES GUIDE — MAJOR CULTIVATED AND WILD SPECIES
+===========================================================
+
+COMMERCIALLY CULTIVATED SPECIES
+
+1. Oyster Mushroom (Pleurotus ostreatus)
+   Family: Pleurotaceae | Origin: Temperate forests worldwide
+   Substrate: Paddy straw, sawdust, cotton waste, newspaper
+   Temperature: 18-28°C (spawn run), 15-22°C (fruiting)
+   Yield: 3-5 flushes; 1 kg mushroom per kg substrate
+   Uses: Culinary (stir-fry, soup), medicinal (antioxidant, antitumor)
+   Varieties: Grey, Golden (P. citrinopileatus), Pink (P. djamor), King (P. eryngii)
+
+2. Button Mushroom (Agaricus bisporus)
+   Family: Agaricaceae | Most widely cultivated globally (40% of world production)
+   Substrate: Composted horse manure + wheat straw (Phase I and II composting)
+   Temperature: 22-25°C (spawn run), 15-18°C (fruiting)
+   Main diseases: Wet bubble, dry bubble, cobweb, bacterial blotch
+
+3. Shiitake (Lentinula edodes)
+   Family: Omphalotaceae | Origin: East Asia
+   Substrate: Oak, cherry hardwood logs or sawdust blocks
+   Temperature: 22-26°C (spawn run), 12-18°C (fruiting); requires cold shock
+   Medicinal: Lentinan (beta-glucan) with anti-cancer properties, Eritadenine (cholesterol reduction)
+
+4. Enoki (Flammulina velutipes)
+   Family: Physalacriaceae
+   Substrate: Sawdust with rice bran; grown in cold conditions
+   Temperature: 18-22°C (spawn run), 5-10°C (fruiting) — cold fruiting is key characteristic
+   Appearance: Long thin stalks, tiny white caps (cultivated); orange-brown stalks (wild)
+
+5. Lion's Mane (Hericium erinaceus)
+   Family: Hericiaceae
+   Substrate: Hardwood sawdust, supplemented blocks
+   Medicinal: Hericenones and erinacines — nerve growth factor (NGF) stimulants
+   Uses: Neurological health, cognitive function
+
+6. King Oyster / Trumpet Royale (Pleurotus eryngii)
+   Family: Pleurotaceae
+   Substrate: Sawdust, cottonseed hulls
+   Temperature: 18-24°C; needs CO2 increase for elongated stalk development
+   Market value: High; prized for firm texture
+
+MEDICINAL MUSHROOMS
+
+7. Reishi (Ganoderma lucidum)
+   Bioactive: Ganoderic acids (triterpenes), beta-glucans, polysaccharides
+   Uses: Immune modulation, anti-inflammatory, blood pressure regulation
+
+8. Turkey Tail (Trametes versicolor)
+   Bioactive: PSK (Krestin) — approved anti-cancer drug in Japan
+   Colorful fan-shaped brackets; grows on dead hardwood
+
+9. Chaga (Inonotus obliquus)
+   Grows on birch trees; charcoal-black exterior
+   Rich in betulinic acid, antioxidants, melanin
+
+POISONOUS MUSHROOMS (identification warning)
+
+10. Death Cap (Amanita phalloides)
+    Most lethal mushroom; causes 90% of fatal mushroom poisonings worldwide
+    Contains: Amatoxins (alpha-amanitin) — no antidote, causes liver/kidney failure
+    Appearance: Pale greenish cap, white gills, ring and volva at base
+
+11. Destroying Angel (Amanita bisporigera)
+    Pure white; contains same amatoxins as Death Cap
+    Often confused with edible species by novices
+
+12. Webcaps (Cortinarius species)
+    Red-brown caps with cobweb veil; delayed toxicity (nephrotoxic orellanine)
+    Symptoms appear 2-3 weeks after ingestion
+
+MUSHROOM ECOLOGY
+- Saprotrophic: Decompose dead organic matter (oyster, shiitake, button)
+- Mycorrhizal: Symbiotic with tree roots (truffles, chanterelles, porcini)
+- Parasitic: Attack living plants or insects (Ophiocordyceps on insects)
+
+SPORE CHARACTERISTICS
+- Oyster mushroom: White spores, 7-12 μm, smooth, cylindrical
+- Button: Pink spores (young), dark brown-purple (mature), ellipsoid
+- Shiitake: White spores, 5-7 μm, smooth, ovoid

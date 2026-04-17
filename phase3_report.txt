@@ -1,0 +1,71 @@
+================================================================================
+  PHASE 3 REPORT — MODEL TRAINING RESULTS
+  Mushroom Disease Classification (Healthy / Single_Infected / Mixed_Infected)
+================================================================================
+  Date         : 19 February 2026
+  Framework    : TensorFlow 2.20.0
+  Hardware     : CPU only (no GPU)
+  Image size   : 224x224 px
+  Batch size   : 16
+  Classes      : Healthy | Single_Infected | Mixed_Infected
+  Train images : 2,400 (augmented)
+  Val images   : 113
+  Test images  : 117 (held out for Phase 4)
+================================================================================
+
+--------------------------------------------------------------------------------
+TRAINING CONFIGURATION
+--------------------------------------------------------------------------------
+  Transfer Learning Strategy (all pretrained models):
+    Stage 1 — Freeze base, train classifier head only (LR=0.001, 10 epochs)
+    Stage 2 — Unfreeze last 30 layers, fine-tune (LR=0.0001, up to 40 epochs)
+
+  Callbacks:
+    - EarlyStopping        (patience=8, monitor=val_accuracy)
+    - ModelCheckpoint      (save best val_accuracy weights)
+    - ReduceLROnPlateau    (factor=0.5, patience=4)
+
+  Class weights applied: Yes (to handle imbalance ratio of 2.16)
+  VGG16: Skipped — too slow on CPU (138M parameters)
+
+--------------------------------------------------------------------------------
+RESULTS — VALIDATION SET (113 images)
+--------------------------------------------------------------------------------
+
+  Rank  Model            Val Accuracy   Val Loss    Weights File
+  ----  ---------------  ------------   --------    --------------------------
+   1    Custom CNN          85.84%       0.4062     Custom_CNN_best.keras   (5.3MB)
+   2    InceptionV3         83.19%       0.4677     InceptionV3_best.keras  (130MB)
+   3    DenseNet201         73.45%       0.4857     DenseNet201_best.keras   (78MB)
+   4    ResNet50            67.26%       0.8874     ResNet50_best.keras     (207MB)
+   5    EfficientNetB0      44.25%       1.0745     EfficientNetB0_best.keras(31MB)
+   -    VGG16               SKIPPED      ---        ---
+
+  BEST MODEL: Custom CNN  >>  85.84% validation accuracy
+
+--------------------------------------------------------------------------------
+OBSERVATIONS & ANALYSIS
+--------------------------------------------------------------------------------
+  1. Custom CNN outperformed all transfer learning models.
+     Likely reasons: small dataset, CPU-limited epochs, simpler model converged faster.
+
+  2. InceptionV3 second best at 83.19% — multi-scale features suit mushroom textures.
+
+  3. DenseNet201 achieved only 73.45% vs 92.5% in reference paper (Wongpanya).
+     Reference used GPU with more epochs — GPU retraining recommended.
+
+  4. ResNet50 (67.26%) and EfficientNetB0 (44.25%) underperformed due to
+     insufficient fine-tuning epochs on CPU.
+
+--------------------------------------------------------------------------------
+RECOMMENDATION FOR PHASE 4
+--------------------------------------------------------------------------------
+  - Primary model for evaluation: Custom CNN (85.84% val acc)
+  - Secondary model: InceptionV3 (83.19% val acc)
+  - All 5 models evaluated on held-out TEST set in Phase 4
+  - Grad-CAM visualizations for best model
+  - Retrain DenseNet201/EfficientNetB0 on Google Colab (GPU) for better results
+
+================================================================================
+  PHASE 3 COMPLETE — Proceed to Phase 4 (Evaluation & Analysis)
+================================================================================

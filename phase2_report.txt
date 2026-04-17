@@ -1,0 +1,75 @@
+========================================================================
+  PHASE 2 REPORT — PREPROCESSING & DATA AUGMENTATION
+========================================================================
+
+STEP 2.1 — PREPROCESS VAL & TEST SETS (resize 224x224, RGB)
+------------------------------------------------------------------------
+  val   / Healthy                preprocessed  44 images
+  val   / Single_Infected        preprocessed  22 images
+  val   / Mixed_Infected         preprocessed  47 images
+  test  / Healthy                preprocessed  46 images
+  test  / Single_Infected        preprocessed  23 images
+  test  / Mixed_Infected         preprocessed  48 images
+
+STEP 2.2 — PREPROCESS + AUGMENT TRAINING SET
+          Target total training images: 2400
+------------------------------------------------------------------------
+  Original training counts: Healthy: 209 | Single_Infected: 102 | Mixed_Infected: 220
+  Per-class targets:        Healthy: 945 | Single_Infected: 461 | Mixed_Infected: 994
+
+  Healthy                 orig=209  augmented=736  total= 945
+  Single_Infected         orig=102  augmented=359  total= 461
+  Mixed_Infected          orig=220  augmented=774  total= 994
+
+STEP 2.3 — FINAL DATASET SUMMARY
+------------------------------------------------------------------------
+  dataset_augmented/train/Healthy                 945 images
+  dataset_augmented/train/Single_Infected         461 images
+  dataset_augmented/train/Mixed_Infected          994 images
+  >> train subtotal                 2400 images
+
+  dataset_augmented/val  /Healthy                  44 images
+  dataset_augmented/val  /Single_Infected          22 images
+  dataset_augmented/val  /Mixed_Infected           47 images
+  >> val subtotal                    113 images
+
+  dataset_augmented/test /Healthy                  46 images
+  dataset_augmented/test /Single_Infected          23 images
+  dataset_augmented/test /Mixed_Infected           48 images
+  >> test subtotal                   117 images
+
+  GRAND TOTAL: 2630 images
+
+STEP 2.4 — AUGMENTATION TECHNIQUES APPLIED
+------------------------------------------------------------------------
+  Each augmented image receives 2–4 randomly selected ops from:
+    - Horizontal flip
+    - Vertical flip
+    - Rotation (up to ±30 degrees)
+    - Zoom (0.85x – 1.15x)
+    - Brightness adjustment (0.7x – 1.3x)
+    - Contrast adjustment (0.8x – 1.2x)
+    - Width/height shift (up to ±10%)
+    - Gaussian noise (std=8)
+    - Shear transformation (up to ±15%)
+
+STEP 2.5 — CLASS IMBALANCE NOTE
+------------------------------------------------------------------------
+  Imbalance ratio (max/min) in training set:
+    2.16  (threshold for concern: >2.0)
+  >> Still imbalanced after augmentation.
+     Action: Use class_weight={'Healthy':w0,'Single_Infected':w1,'Mixed_Infected':w2} in model.fit()
+     Weights will be computed automatically in Phase 3.
+
+NORMALIZATION NOTE
+------------------------------------------------------------------------
+  Images stored as JPG (uint8 0-255) in dataset_augmented/.
+  During model training (Phase 3), normalization to [0,1] will be
+  applied via rescale=1./255 in Keras ImageDataGenerator.
+  This avoids storing float images and saves disk space.
+
+========================================================================
+  PHASE 2 COMPLETE
+  Augmented dataset at : F:\Mushroom Disease Dataset (Healthy, Single Infected\Mushroom Disease Dataset (Healthy, Single infected & Mixed infected )\dataset_augmented
+  Report saved to      : F:\Mushroom Disease Dataset (Healthy, Single Infected\Mushroom Disease Dataset (Healthy, Single infected & Mixed infected )\phase2_report.txt
+========================================================================

@@ -1,0 +1,8 @@
+[
+  {
+    "model": "EfficientNetB0",
+    "val_accuracy": 0.4425,
+    "val_loss": 1.0745,
+    "time_min": 19.3
+  }
+]

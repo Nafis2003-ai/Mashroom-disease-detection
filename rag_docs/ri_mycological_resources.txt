@@ -1,0 +1,625 @@
+SOURCE: https://www.rhodeislandmycologicalsociety.org/blog/resources
+============================================================
+
+Ultimate Mushroom Resource list
+Borders Farm
+Feb 21
+Written By
+D. Tempest Thomas
+We are endlessly grateful for everyone who has so freely shared their mycological knowledge and those who have published open-access papers, images, websites, articles, and more.
+Compiled by Sigrid Jakob for NYMS and FUNDIS
+READING
+Newsletters
+McIlvainea
+Articles on mycology, science and history
+Fungi magazine
+A lot of the older articles are available as pdfs
+Omphalina
+Foray Newfoundland and Labrador's excellent newsletter
+The Mycophile
+NAMA's newsletter
+Mushroom the Journal
+Magazine covering taxonomy, interviews, travel + more
+Inoculum
+Journal of the Mycological Society of America
+Mycotaxon
+The international journal of fungal taxonomy/ nomenclature
+General reference
+Mushroom Expert
+Michael Kuo's website
+Les champignons du Quebec
+An invaluable resource. In French - if you don't read French, use Google Translate
+Champignons de Charente-Maritime
+PDF files of common mushrooms. In French.
+Cyberliber
+Large repository of older mushroom books and journal articles
+Mushroom description
+How to describe a mushroom’s morphological characteristics
+David Moore's World of Fungi
+Excellent articles on fungal biology and ecology
+Specific Types of Fungi
+Agarics and Agaricales
+By Jacob Kalichman
+Alabama Fungi
+By Alabama Mushroom Society
+Amanitacae
+Rod Tulloss's Amanita pages
+Ascomycetes
+Björn Wergen’s site - not fully finished yet but great detailed images and descriptions (also Oomycetes, Zygomycota etc)
+Ascomycetes
+By Michel Hairaud- some aspects of the site require a membership. Click around much of the information is free.
+Ascomycete
+s
+By the non-profit Ascomycete.org
+Freshwater Ascomycetes
+General background and database of species
+Basidiomycetes
+By Mushroom Research Foundation
+Boletinae
+Roy Halling's bolete projects
+Cortinarius of the North East
+Large North Eastern Cortinarius pdf by Mycoquebec
+Cortinarius in North America
+By Shannon Adams
+Crust fungi
+Alden Dirks’ crust fungi website
+Clavaria
+By Joshua Birkebak
+Dothideomycetes
+By Mushroom Research Foundation
+Freshwater Fungi
+By Mushroom Research Foundation
+Fungicolous Fung
+i
+By John Plischke, downloadable
+Hebeloma
+By Henry Beker
+Marine Fungi
+By E.B.G. Jones
+Polypores
+Josef Vlaslik’s polypore site. Lots of polypore photos, with many collections originating in the North East.
+Polypores
+Polypores of British Columbia. West coast oriented but lots of relevant species with keys and color photos.
+Presentations on various types of fungi
+By Michael Beug
+Presentations on various types of fungi
+By Dianna Smith
+Rare mushrooms of Western NA
+Recently-released free book with good general introduction on how to collect mushrooms for study
+Russula
+NYMS intro presentation
+Slime molds
+Sarah Lloyd’s website
+Sordariomycetes
+By Mushroom Research Foundation
+Truffles of North America
+By North American Truffling Society
+Wood, Fungi Growing on
+Gary Emberger's site on wood-decay fungi (click on
+Species List
+)
+Xylaria
+By Roo Vandegrift
+Blogs and article collections
+Alden Dirks’s 1001 Mushrooms
+Alden’s series on 1001 edible mushrooms
+Deep Funga blog
+The Fungal Diversity Survey’s  blog
+Forest Floor Narrative
+Blog about mycology, conservation and ecology
+Mykoweb
+A huge selection of downloadable mycological literature
+Tom Volk's Fungus of the Month
+A series of articles covering common and rare fungi
+Weird and Wonderful Wild Mushrooms
+Jan Thornhill's fascinating mushroom blog
+iNaturalist and Mushroom Observer
+How to create iNat observations
+A step-by-step guide for beginners (NYMS focus)
+Fungal Diversity Survey iNat project
+Add high quality observations to FunDiS’ database for used by science and conservation
+How to use iNaturalist for fungi
+Video with instructions
+How to use iNat with your mobile phone
+Video with instructions
+Mushroom Observer
+A citizen science platform dedicated to fungi
+Fungal biology
+The Fifth Kingdom
+Introduction to the fungal kingdom
+Fungal evolution
+Connects fungal trees; pathbreaking paper in Nature
+Evolution of the basidiomycota
+Downloadable article in Fungal Diversity
+Outline of fungi
+Provides an up-to-date outline of fungal families + genera
+How many fungi are there?
+Influential article by Meredith Blackwell
+Fungal evolution: diversity, taxonomy, phylogeny
+Downloadable article in Biological Reviews
+Bigger picture reading
+Your local library likely offers free download of e-books about fungi including field guides
+The mushroom at the end of the world
+A book about matsutake, their economies and ecologies
+The way through the woods
+A book about mourning and mushrooms
+Entangled Life
+How fungi make our worlds, change our minds and shape our futures
+State of the world’s fungi report
+Kew’s report on the state of fungi from many angles
+21st Century Guidebook to Fungi
+Free online mycology book
+Observing + documenting fungi
+Collecting mushrooms for scientific study
+Introduction to proper documentation
+Articles on description and documentation
+Collected by Patrick Leacock
+Chemical stains and tests for fungi
+By John Plischke
+Microscopy
+Using a microscope to study mushrooms
+Michael Kuo's guide
+Microscopes and the amateur mycologist
+A beginner's guide
+Alan Rockefeller lecture on fungal microscopy
+Lecture to NYMS
+Article on mycological microscopy
+Advice on choosing equipment
+Introduction to microscopy
+Techniques and characteristics to look for
+Fungal spore library
+A wide array of different spores
+Piximetre
+Tool for measuring spores on a computer
+Translation of Piximetre manual
+By Bharati Mandapati
+Helicon Focus
+Stacking software
+A buyer’s guide to compound microscopes
+New vs used, essential features etc
+Leon Tanghe’s guide to the microscope
+By Leo, a Rochester area mycologist
+Reagents
+Spectacular assortment of reagents and more
+Fungal Microscopy by M No Line
+How to get started with fungal microscopy
+Elan Trybuch’s guide to Fiji
+Protocol for microscopy measurement software
+Fungal sequencing
+Mushroom DNA Barcoding lecture
+Very comprehensive lecture by Alan Rockefeller
+Impact of DNA sequencing on taxonomy
+Benefits and consequences of DNA analysis of fungi
+BLAST
+Search engine for genetic sequences
+Fungal sequencing Facebook group
+Supportive community
+Introduction to fungal DNA sequencing
+Great lecture by Damon Tighe
+PCR in pictures
+By Alan Rockefeller
+Tools for viewing sequencing data
+Compiled by Genewiz
+Cleaning a sequence
+By Alan Rockefeller
+A path to knowing the mushrooms of Illinois
+Lecture on citizen science and sequencing Indiana’s fungi
+Creating phylogenetic trees
+Once you have a sequence and want to know where it fits
+Uploading sequences to Genbank
+Adding sequences to the public record
+Setting up and using a PCR home lab
+A YouTube video series
+Extracting + amplifying DNA at home
+A guide and protocol for beginners
+Alan Rockefeller protocol
+here
+and
+here
+(which has a great section on analyzing results at the end)
+Comprehensive
+lecture
+by Alan Rockefeller that includes PCR process, sequence analysis and tree building.
+Everymanbio on
+at-home sequencing
+,
+sending your samples to the lab  and interpreting the results
+.
+Harte Singer on
+editing a trace file
+,
+analyzing that sequence with BLAST
+,
+building a contig from forward and reverse reads using Seqtrace
+, and
+saving your contig and checking it with BLAST
+Philosophical/practical issues
+The unbearable lightness of sequence-based identification
+History of mycology
+Biographical sketches of NA mycologists
+By Hesler; from Ames all the way to Zundel
+Women mycologists
+Through the ages
+Women taxonomists
+Focus on mycology
+Mycologists of the 19th Century
+Downloadable article in Mycotaxon by Ron Petersen
+Relative Finder
+A Family Search tool that shows how you’re related to various famous mycologists (requires login)
+Psychoactive fungi
+The Shroomery
+Magic mushrooms demystified, lively forums
+Psychoactive fungi lecture
+Alan Rockefeller presentation on psychoactive fungi
+Psychoactive fungi lecture
+History, identification, therapeutic uses; North East focus
+Community science
+Data is not the destination
+Lecture by Christian Schwarz on community science
+Introduction to citizen science
+NYMS intro lecture including role and use of iNat, NAMP
+Citizen Science Association
+An organization seeking to move community science forward
+Fungal conservation
+The Global Fungal Red List
+A conservation effort that seeks to have fungi red-listed
+Fungal conservation article database
+Articles about different aspects of fungal conservation
+Lost and Found Fungi Project
+Kew’s project to rediscover rare and vulnerable fungi
+Kew’s State of the World’s Fungi
+Chapters on climate change and fungal conservation
+Fundación Fungi
+Saving the world, one mushroom at a time
+Medicinal mushrooms
+Dianna Smith on medicinal mushrooms
+Covering a number of species
+Phylogenetics/cladistics and trees
+Tree thinking
+A downloadable book about phylogenetic trees
+Mushroom growing
+Radical Mycology
+Peter McCoy's guide to seeing and working with fungi
+Facebook group on mushroom growing
+Troubleshooting and advice
+DIY mushroom cultivation
+By Willoughby Arevalo
+Cooking
+Mushroom fermentation
+Downloadable PDF
+Koji Alchemy
+Book about mold-based fermentation
+Dyeing with mushrooms
+Dyeing protein fibers with mushrooms
+A NAMA guide
+Bloom & Dye
+‘
+How to’ guide
+T
+he best mushrooms for color
+A NAMA guide
+Fungal and bacterial pigments
+A research paper
+Other
+Gary Lincoff's site
+From scientific papers to songs + poems
+David Rose on John Cage, mycologist
+PDF of an article that appeared in Fungi magazine
+Precipitation map
+NAOO’s weather map of past precipitation (7/14 days)
+VIDEOS
+General introductions to fungi
+Gary Lincoff on Gilled Mushrooms
+Learn your Land - Adam Haritan’s video series on identifying common wild mushrooms
+Bill Yule on how we identify mushrooms
+Identifying Russulas, earth stars, blewits by Anna McHugh
+Lectures on general topics
+Donald Pfister - Estimating Fungal Diversity
+Christian Schwarz - Mycology into the 21st Century
+Christian Schwarz - DNA sequencing and citizen science
+An Oral History of Mycology
+Lecture on fungal biology, mycoremediation and culturing by Craig Trester
+The secret language of trees
+The amazing realm of molds
+Lectures on specific species
+Alan Rockefeller on psychoactive mushrooms in California
+Bill Yule on boletes
+Alan Rockefeller on the fungi of Mexico
+Dr Brian Perry on bioluminescent fungi
+Hans-Otto Baral on Orbiliomycetes
+Bart Buyck on Russula in North America
+David Hibbett on how mushrooms changed the world
+Donald Pfister on Orbiliomycetes
+Fetid Russulas in North America lecture by Peter Avis
+Movies
+Fantastic fungi
+A film about fungi and people who love them
+Know your mushrooms
+Gary Lincoff and Larry Evans on the role of mushrooms in culture
+Creeping Gardens
+A film about slime molds
+What was the first fungus?
+YouTube movie
+OTHER RESOURCES
+Databases
+MyCoPortal
+An inventory of all US herbaria (search button is below the fold)
+MycoMap
+Includes some of the fungi sequenced by NAMP projects
+Cybertruffle
+Database with many resources and writings on fungi
+508 free mushroom books
+A resource by John Plischke
+List of North American mushroom clubs/societies
+Affiliated with the North American Mycological Society (NAMA)
+General list
+Podcasts
+Mushroom Revival
+Some real gems among these interviews with scientists and others
+Mushroom Hour
+Interviews with experts on growing, foraging, therapeutic uses
+Fungitown
+Over 20 episodes
+Names
+Recorded pronunciations
+How to say the names
+Index Fungorum
+All the latest names
+MycoBank
+The other inventory of species/names
+Mycological word of the day
+Rob Hallock’s Facebook group that focuses on Etymology
+Origins + Meanings of Fungi Names
+Specialist retailers
+Mycoboutique
+Mushroom-focused store in Montreal, does mail order
+Education
+Mycologos
+Radical Mycology/Peter McCoy's online mushroom school
+Specialist bookstores
+NHBS
+Books on wildlife, ecology & conservation
+Koeltz Botanical books
+Botanical books
+SOCIAL MEDIA
+Sites where people track their finds
+iNaturalist
+A great place to record and ID your observation, view those of
+others and engage; also available as an app
+Mushroom Observer
+A site for recording mushroom finds; unlike iNat, it's only for fungi
+Sites with knowledgeable users who can help with identification
+AscoFrance
+A helpful community of ascomycete enthusiasts and descriptions
+of a vast range of ascos
+Coprophile Pilze
+All dung fungi, all the time, serious expertise (in German)
+Reddit Mycology
+Reddit Ascomycete
+Facebook
+The Mushroom Identification Forum
+The largest of the big Facebook mushroom ID groups
+Amanita of North America
+A lively Facebook group moderated by the world's leading expert
+on amanitas, Rod Tulloss
+Amanita
+Erlon Bailey’s Amanita Facebook Group
+Ascomycetes of North America
+Where people share interesting NA asco finds
+Ascomycetes of the world
+Moderated by one of the world's greatest asco experts, Björn Wergen
+Boletes of North America
+Lively group during bolete season, with several bolete experts on
+hand for IDs
+This Looks Like a Job For Michel Beeckman
+For Coprinoid ID and questions (Coprinellus, Coprinus, Coprinopsis
+Coprophilic Fungi
+For the Dung-lovers
+Coral Mushrooms of North America
+A group focusing on all the North American “coral” fungi
+Cordyceps: Elaphocordyceps,
+For all your Cordycep sensu lato fungi
+Metacordyceps, Ophiocordyceps,
+Clavicipitaceae
+Cortinarius ID + discussion group (NA)
+A group focused on Cortinarius, with experts on hand
+Cortinarius
+A Cortinarius group that is not specific to North America
+Crust fungi and polypores
+Where people share and ID interesting crusts and polypores
+Entoloma
+A group focusing on Entoloma
+Fungal microscopy
+Where people share fascinating microscopic images of fungi
+Ganoderma Worldwide
+A group focusing on Ganoderma
+Gasteroid Fungi
+A group focusing on the gasteroid fungi
+Gymnopilus International
+For Gymnopilus
+Gymnopilus of North America
+For Gymnopilus in North America
+Waxcap Mushrooms (Hygrophoraceae)
+Hygrophoraceae in North America
+of North America
+Inocybe
+A group focusing on Inocybe
+Lepiota and Friends
+For Lepiota sensu lato
+Marine Fungi
+A group focused on marine fungi
+Decoding Melanoleuca
+For Melanoleuca
+Mycenaceae
+A group for Mycenaceae
+Phallales
+A group for all the stinkhorns
+Pluteus International
+A group devoted to Pluteus
+Pyrophilous Fungi
+For fungi that occur after burns
+Russula
+A whole group just for trying to narrow down your Russula
+Lactarius, Lactifluus, Russula, Multifurca
+A group focusing on the Russulaceae
+& genera within Russulaceae
+Rusts, Smuts, and other Phytoparasitic Fungi
+For your phytoparasitic fungi
+Slime Mold Identification & Appreciation
+For ID and information on Myxomycetes
+Strophariaceae and Hymenogastraceae
+A group focusing on Strophariaceae and Hymenogastraceae
+Tremellales, Dacrymycetaceae,
+A group devoted to celebrating and IDing everything jelly
+Auriculariales And Other Jelly Fungi
+Tricholoma of North America
+A group focusing on Tricholoma in North America
+Truffles of the World
+A group focusing on Truffles
+arbcology wood decaying fungi for
+A group for arborists, but a great place to learn about wood decay fungi
+arborists and mycologists
+Xylaria ID, Discussion & Appreciation
+A group focusing on Xylaria
+Latest Mycological Research + Taxonomy
+If you want to keep track of the latest research and name changes
+Mushroom Parasites
+A group for parasitic fungi
+False Morels Demystified
+For ID and learning about anything called a “False Morel”
+Mushroom Edibility and Discussion
+Fantastic group to learn about cooking and eating different mushrooms
+Fungal Microscopy
+For all your fungal microscopy questions
+Mushroom events of the USA
+A list of mushroom-related events large and small
+Indiana Mushrooms
+An exemplary local group with experts
+Agar Of Asgard
+A group focused on DIY home-lab work with agar
+Mycological Word of the Day
+A great place to learn and understand mushroom lingo
+Instagram
+@inaturalist
+Amazing pictures from the natural world every day
+@biodiversiphile
+Christian Schwarz's feed
+@alan_rockefeller
+Interesting pictures eg Mexican fungi, bioluminescent fungi,
+events/classes Alan leads
+@AphyllophoroidFungiOfChile
+About polypores and corticioids recorded in Chile
+@damontighe
+Citizen science, natural world, fungi, sequencing, education
+@werdnus_roo
+Roo Vandegrift's feed; fungi, art, documentary making
+@learnyourland
+Adam Haritan's feed, education on fungi
+@FFungi
+Fungi Foundation of Chile, have been doing great live interviews
+@kallampero
+Danny Newman's feed - South American fungi
+@mycosymbiote
+William Padilla-Brown's feed - cordyceps, growing, sequencing
+@fishroom_man
+Rich Tehan’s feed; Cordyceps and Tolypocladium
+@mycohobo
+Noah Siegel's feed; stunning pictures from far-off locales
+@giulifungi
+Giuliana Furci's personal feed
+@sarah.lloyd.tasmania
+Stunning myxomycete pix
+@jawnattenborough
+Bethany Teigen’s observations (Philadelphia Mycology Club)
+@nyc.myc
+Mushroom educator Craig Trester's feed
+@fungus_fairy
+Artist Andrew Cannon's feed on fungi and foraging
+@oh_myco
+Member Kat Moon's beautiful mushroom drawings
+@dung_fungi
+A dung fungi-only feed
+@specialnothing
+Mushroom photographer and artist Phyllis Ma
+@newyorkmyc
+The best finds of the New York Mycological Society
+@nhmymycology
+Bryn Dentinger’s feed
+@jamesmitchell1917
+James Kameron Mitchell's feed
+@thefriendlyfungus
+Pretty mushroom pictures
+@fungi.photography
+Beautiful mushroom pictures
+@the_fungal_future
+Pretty mushroom pictures
+@discomycete
+Pretty mushroom pictures
+@fungachilena
+Information about fungi from Chile
+Twitter
+Robert Blanchette
+Forest fungi, wood decomposition, ethnomycology
+Danny Haelewaters
+Parasitic fungi on bats and ladybugs
+Jason Stajich
+Evolution of fungi using genomics
+Marc Buee
+Microbial ecology, fungi, forest, mycorrhizal symbiosis
+Jason Slot
+Fungal evolution researcher at Ohio State, eg Psilocybe
+Fungal Genomes
+Digesting the fungal genomes
+Matt Kasson
+Fungus-arthropod interactions, eg Massospora
+MSA
+Mycological Society of America’s feed
+Mycocosm
+Fungal Genomics Resource of the Joint Genome Institute
+RokasLab
+Fungal evolution
+KEYS
+Assortment of keys
+Interactive general key
+General keys by Læssøe and Petersen inc wheels from Fungi of Temperate Europe
+Interactive ascomycete key
+Interactive bolete filter
+Inocybaceae
+Interactive Inocybaceae key
+Key to odorous mushroom species
+Mushrooms that grow on other mushrooms
+Orbiliomycetes
+Pictorial key to mushrooms of the Pacific Northwest
+Pyrenomycetes
+Amanita Sect. Lepidella
+Chlorociboria
+Coprinus
+Corticioid fungi
+Cortinarius
+Cortinarius subgenus Myxacium
+Crepidotus
+Dung fungi
+Vast repository of dung fungi keys
+Galerina
+Hebeloma
+Interactive Geoglossum key
+Hygrophorus
+Lactarius
+Lactarius (Bessette)
+Mycena
+Peziza
+Pholiota
+Rhizopogon
+Russula - Kibby + Fatto
+The key to Russulas of the North East
+Interactive Scutellinia key
+Squamanita
+Stereum
+Trichopeziza
+By Hans-Otto Baral
+Wax caps (Bessette)
+Wood decay fungi
+Xylariaceae
+Autumn
+Winter
+D. Tempest Thomas

@@ -1,0 +1,282 @@
+================================================================================
+       MUSHROOM DISEASE CLASSIFICATION - RESEARCH PLAN & WORKFLOW
+================================================================================
+Dataset: Mushroom Disease Dataset (Healthy, Single Infected & Mixed Infected)
+Location: Mushroom Development Institute, Savar, Dhaka, Bangladesh
+Captured: April 2025 | Device: iPhone 11 Pro Max | Total Images: 761
+Classes: Healthy | Single Infected (Green/Black Mold) | Mixed Infected
+Annotation Status: Not annotated (annotation required before training)
+
+References: Vidanapathirana et al. (2023), Shilpashree et al. (2025),
+            Wongpanya et al. (2025), Guragain et al. (2024)
+================================================================================
+
+
+--------------------------------------------------------------------------------
+PHASE 1: DATASET PREPARATION & ANNOTATION
+--------------------------------------------------------------------------------
+Goal: Convert raw, unlabeled images into a clean, structured, labeled dataset.
+
+Steps:
+  1.1  Audit & Inventory
+       - Verify all 761 images are readable and not corrupted
+       - Count images per folder: Healthy / Single_Infected / Mixed_Infected
+       - Document any duplicates or near-duplicates and remove them
+
+  1.2  Manual Annotation / Labeling
+       - Confirm class labels for each image:
+           Class 0 → Healthy
+           Class 1 → Single Infected  (suspected Trichoderma / Aspergillus /
+                                        Rhizopus — green mold or black mold)
+           Class 2 → Mixed Infected   (healthy + mold OR mold + mold in
+                                        same image)
+       - Tool recommendation: LabelImg or Roboflow (free tier)
+       - For classification only: folder-based labels are sufficient
+       - For object detection (YOLO): draw bounding boxes around mold regions
+       - Save annotations in YOLO or Pascal VOC format
+
+  1.3  Dataset Split
+       - Split per class to preserve class balance:
+           Train  : 70%  (~533 images)
+           Val    : 15%  (~114 images)
+           Test   : 15%  (~114 images)
+       - Use stratified split to ensure each class is represented equally
+         in all three splits
+
+  NOTE: 761 images is a small dataset. Augmentation (Phase 2) is critical.
+
+Deliverable: Organized folder structure —
+  dataset/
+    train/  healthy/  single_infected/  mixed_infected/
+    val/    healthy/  single_infected/  mixed_infected/
+    test/   healthy/  single_infected/  mixed_infected/
+
+
+--------------------------------------------------------------------------------
+PHASE 2: PREPROCESSING & DATA AUGMENTATION
+--------------------------------------------------------------------------------
+Goal: Standardize inputs and artificially expand the dataset to reduce
+      overfitting (inspired by all 4 reference papers).
+
+Steps:
+  2.1  Preprocessing
+       - Resize all images to a uniform size: 224x224 px (standard for
+         VGG16, ResNet50, InceptionV3, DenseNet201)
+       - Normalize pixel values to [0, 1] by dividing by 255
+       - Convert all images to RGB (3-channel) if not already
+
+  2.2  Augmentation (applied only to training set)
+       - Horizontal flip
+       - Vertical flip
+       - Rotation: up to 30 degrees
+       - Zoom: up to 20%
+       - Shear transformation: up to 15%
+       - Brightness adjustment: +/- 20%
+       - Random noise addition (Gaussian)
+       - Width/height shift: up to 10%
+       - Target augmented training set size: ~2,000–2,500 images
+
+  2.3  Tools
+       - Keras ImageDataGenerator  OR  Albumentations library (Python)
+       - Apply augmentation on-the-fly during training (saves disk space)
+
+Deliverable: Preprocessing + augmentation pipeline (Python script)
+
+
+--------------------------------------------------------------------------------
+PHASE 3: MODEL SELECTION & TRAINING
+--------------------------------------------------------------------------------
+Goal: Train and compare multiple deep learning models for classification.
+      This is the core experimental phase.
+
+Strategy: Transfer Learning (pre-trained on ImageNet) + Fine-tuning
+          (consistent with Papers 1, 3, 4)
+
+  3.1  Baseline CNN (Custom)
+       - Build a lightweight custom CNN as a performance baseline
+       - 3–4 Conv2D + MaxPooling layers → Flatten → Dense → Softmax (3 classes)
+       - Helps understand what pre-trained models add
+
+  3.2  Transfer Learning Models (compare all)
+       ┌─────────────────┬────────────────────────────────────────────────┐
+       │ Model           │ Why / Reference                                │
+       ├─────────────────┼────────────────────────────────────────────────┤
+       │ VGG16           │ Paper 1 (Vidanapathirana) — simple, robust     │
+       │ ResNet50        │ Papers 1, 3 — strong residual connections       │
+       │ InceptionV3     │ Papers 1, 3 — multi-scale feature extraction   │
+       │ DenseNet201     │ Papers 3, 4 — best performer (92.5% acc)       │
+       │ EfficientNetB0  │ Modern, lightweight, high accuracy (bonus)     │
+       └─────────────────┴────────────────────────────────────────────────┘
+
+  3.3  Training Configuration
+       - Framework: TensorFlow / Keras (Python)
+       - Optimizer: Adam
+       - Loss Function: Categorical Cross-Entropy (3-class softmax output)
+       - Batch Size: 32
+       - Epochs: 50 (with early stopping, patience=10)
+       - Learning Rate: 0.0001 (fine-tuning)
+       - Fine-tuning strategy:
+           Step 1 — Freeze all base model layers, train top classifier
+                    (5–10 epochs)
+           Step 2 — Unfreeze last 20–30 layers, retrain with low LR
+                    (remaining epochs)
+       - Callbacks: EarlyStopping, ModelCheckpoint (save best weights),
+                    ReduceLROnPlateau
+
+  3.4  Optional: Object Detection Variant
+       - If bounding box annotations are completed (Phase 1.2):
+         Train YOLOv5 or YOLOv8 for localization of mold regions
+         (inspired by Paper 2 — Shilpashree, 94% precision)
+       - This enables real-time detection, not just classification
+
+Deliverable: Trained model weights (.h5 / .pt files) for each architecture
+
+
+--------------------------------------------------------------------------------
+PHASE 4: EVALUATION & ANALYSIS
+--------------------------------------------------------------------------------
+Goal: Rigorously compare models and document results.
+
+  4.1  Per-Model Metrics (on held-out Test Set)
+       - Accuracy
+       - Precision (per class + weighted average)
+       - Recall / Sensitivity (per class + weighted average)
+       - F1-Score (per class + weighted average)
+       - Confusion Matrix (3x3 — Healthy / Single / Mixed)
+
+  4.2  Advanced Analysis
+       - ROC Curve + AUC score per class (inspired by Paper 2)
+       - PCA visualization of learned features (inspired by Paper 2)
+       - Grad-CAM heatmaps — visualize which image regions the model
+         focuses on (validates that mold regions are being detected)
+       - Training/Validation loss & accuracy curves (check for overfitting)
+
+  4.3  Comparison Table
+       ┌─────────────────┬──────────┬───────────┬────────┬──────────┐
+       │ Model           │ Accuracy │ Precision │ Recall │ F1-Score │
+       ├─────────────────┼──────────┼───────────┼────────┼──────────┤
+       │ Custom CNN      │   TBD    │    TBD    │  TBD   │   TBD    │
+       │ VGG16           │   TBD    │    TBD    │  TBD   │   TBD    │
+       │ ResNet50        │   TBD    │    TBD    │  TBD   │   TBD    │
+       │ InceptionV3     │   TBD    │    TBD    │  TBD   │   TBD    │
+       │ DenseNet201     │   TBD    │    TBD    │  TBD   │   TBD    │
+       │ EfficientNetB0  │   TBD    │    TBD    │  TBD   │   TBD    │
+       └─────────────────┴──────────┴───────────┴────────┴──────────┘
+
+Deliverable: Evaluation report + plots + Grad-CAM visualizations
+
+
+--------------------------------------------------------------------------------
+PHASE 5: DEPLOYMENT (OPTIONAL / FUTURE SCOPE)
+--------------------------------------------------------------------------------
+Goal: Make the best model usable in practice (inspired by Papers 3 & 4).
+
+  5.1  Web Application
+       - Framework: Flask (Python) or Streamlit (faster to build)
+       - User uploads a mushroom bag/substrate image
+       - Model predicts: Healthy / Single Infected / Mixed Infected
+       - Display confidence scores and Grad-CAM overlay
+
+  5.2  Mobile / On-Site Use
+       - Export model to TensorFlow Lite (TFLite) for Android/iOS
+       - Enables use at farm with smartphone camera
+
+  5.3  Future: IoT Integration (inspired by Paper 4)
+       - Connect temperature/humidity sensors with classification model
+       - Alert farmers when environmental conditions + visual signs
+         indicate contamination risk
+
+Deliverable: Flask/Streamlit web app with uploaded image classification
+
+
+--------------------------------------------------------------------------------
+COMPLETE WORKFLOW (END-TO-END)
+--------------------------------------------------------------------------------
+
+  [761 Raw JPG Images]
+           |
+           v
+  [PHASE 1: ANNOTATION]
+  Verify images → Assign class labels → Stratified split (70/15/15)
+           |
+           v
+  [PHASE 2: PREPROCESSING + AUGMENTATION]
+  Resize to 224x224 → Normalize [0,1] → Augment training set
+  (flip, rotate, zoom, shear, brightness, noise)
+  → Target ~2,000–2,500 training images
+           |
+           v
+  [PHASE 3: MODEL TRAINING]
+  Train 6 models in parallel:
+    Custom CNN | VGG16 | ResNet50 | InceptionV3 | DenseNet201 | EfficientNetB0
+  Framework: TensorFlow/Keras
+  Loss: Categorical Cross-Entropy | Optimizer: Adam | Epochs: 50
+           |
+           v
+  [PHASE 4: EVALUATION]
+  Accuracy / Precision / Recall / F1 / Confusion Matrix / ROC-AUC
+  PCA Feature Visualization → Grad-CAM Heatmaps
+  → Select BEST MODEL
+           |
+           v
+  [PHASE 5: DEPLOYMENT (Optional)]
+  Flask/Streamlit Web App → TFLite Mobile Export → IoT Future Work
+           |
+           v
+  [OUTPUT: Mushroom Condition Report]
+  → Healthy / Single Infected / Mixed Infected + Confidence Score
+
+
+--------------------------------------------------------------------------------
+RECOMMENDED TOOLS & LIBRARIES
+--------------------------------------------------------------------------------
+  Language     : Python 3.10+
+  Deep Learning: TensorFlow 2.x / Keras
+  Data         : NumPy, Pandas, OpenCV, Pillow
+  Augmentation : Keras ImageDataGenerator OR Albumentations
+  Visualization: Matplotlib, Seaborn, Grad-CAM (tf-explain or pytorch-grad-cam)
+  Annotation   : LabelImg (offline) OR Roboflow (online, free tier)
+  Object Det.  : Ultralytics YOLOv8 (if detection path chosen)
+  Deployment   : Flask OR Streamlit
+  Environment  : Jupyter Notebook / Google Colab (free GPU)
+
+
+--------------------------------------------------------------------------------
+KEY CHALLENGES & MITIGATION
+--------------------------------------------------------------------------------
+  Challenge 1: Small Dataset (761 images)
+  → Mitigation: Heavy augmentation + Transfer Learning (pre-trained weights)
+               + Consider adding public mushroom disease images if available
+
+  Challenge 2: Class Imbalance (unknown exact split per class)
+  → Mitigation: Count images per class first; use class_weight parameter
+               in Keras training if imbalanced
+
+  Challenge 3: "Mixed Infected" is ambiguous (multi-label nature)
+  → Mitigation: Treat as a third distinct class for simplicity (multi-class);
+               OR explore multi-label classification as future work
+
+  Challenge 4: No Annotations
+  → Mitigation: Folder-based labels sufficient for image classification;
+               only need bounding boxes if doing object detection (YOLO)
+
+  Challenge 5: Suspected mold types (Trichoderma / Aspergillus / Rhizopus)
+               not confirmed in metadata
+  → Mitigation: Focus on visual contamination detection, not species ID;
+               note limitation in paper and recommend lab confirmation
+
+
+--------------------------------------------------------------------------------
+RESEARCH NOVELTY vs. EXISTING PAPERS
+--------------------------------------------------------------------------------
+  - This dataset covers 3 classes (Healthy / Single / MIXED) — Mixed Infected
+    is not addressed in Papers 1–4, making it a novel contribution
+  - Real-world images from Bangladesh mushroom farm (local agricultural context)
+  - Comparison of 6 architectures in one study (broader than individual papers)
+  - Grad-CAM analysis provides interpretability (not done in all references)
+  - Small dataset + strong augmentation pipeline is a reproducible contribution
+
+
+================================================================================
+END OF RESEARCH PLAN
+================================================================================

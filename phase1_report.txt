@@ -1,0 +1,53 @@
+========================================================================
+  PHASE 1 REPORT — MUSHROOM DISEASE DATASET PREPARATION
+========================================================================
+
+STEP 1.1 — AUDIT & INVENTORY
+------------------------------------------------------------------------
+  Healthy              Found: 299  |  Valid: 299  |  Corrupt:   0
+  Single_Infected      Found: 147  |  Valid: 147  |  Corrupt:   0
+  Mixed_Infected       Found: 315  |  Valid: 315  |  Corrupt:   0
+
+  Total images found : 761
+  Total valid        : 761
+  Total corrupt/bad  : 0
+  >> All images passed integrity check.
+
+STEP 1.2 — CLASS DISTRIBUTION
+------------------------------------------------------------------------
+  Healthy              299 images  ( 39.3%)  |###################
+  Single_Infected      147 images  ( 19.3%)  |#########
+  Mixed_Infected       315 images  ( 41.4%)  |####################
+
+  Imbalance ratio (max/min): 2.14
+  >> WARNING: Significant class imbalance detected.
+     Recommendation: Use class_weight in Keras or oversample.
+
+STEP 1.3 — STRATIFIED TRAIN / VAL / TEST SPLIT (70 / 15 / 15)
+------------------------------------------------------------------------
+  Healthy               train=209  val= 44  test= 46  (total=299)
+  Single_Infected       train=102  val= 22  test= 23  (total=147)
+  Mixed_Infected        train=220  val= 47  test= 48  (total=315)
+  >> train total          531 images
+  >> val total            113 images
+  >> test total           117 images
+
+STEP 1.3 (cont.) — COPYING FILES INTO dataset/ FOLDER
+------------------------------------------------------------------------
+  Copied 761 images into: F:\Mushroom Disease Dataset (Healthy, Single Infected\Mushroom Disease Dataset (Healthy, Single infected & Mixed infected )\dataset
+
+  Final dataset/ structure:
+    dataset/train/Healthy                209 images
+    dataset/train/Single_Infected        102 images
+    dataset/train/Mixed_Infected         220 images
+    dataset/val/Healthy                 44 images
+    dataset/val/Single_Infected         22 images
+    dataset/val/Mixed_Infected          47 images
+    dataset/test/Healthy                 46 images
+    dataset/test/Single_Infected         23 images
+    dataset/test/Mixed_Infected          48 images
+
+========================================================================
+  PHASE 1 COMPLETE
+  Report saved to: F:\Mushroom Disease Dataset (Healthy, Single Infected\Mushroom Disease Dataset (Healthy, Single infected & Mixed infected )\phase1_report.txt
+========================================================================
