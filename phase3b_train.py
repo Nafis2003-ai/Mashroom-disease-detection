@@ -124,9 +124,10 @@ DATA_AUG = keras.Sequential([
 def mixup_batch(images, labels, alpha=MIXUP_ALPHA):
     """Blend pairs within a batch.  alpha=0 disables."""
     lam = tf.random.uniform([], alpha, 1.0 - alpha) if alpha > 0 else tf.constant(1.0)
+    lam = tf.cast(lam, images.dtype)
     idx = tf.random.shuffle(tf.range(tf.shape(images)[0]))
     return (lam * images + (1.0 - lam) * tf.gather(images, idx),
-            lam * labels + (1.0 - lam) * tf.gather(labels, idx))
+            tf.cast(lam, labels.dtype) * labels + (1.0 - tf.cast(lam, labels.dtype)) * tf.gather(labels, idx))
 
 
 def load_train_ds() -> tf.data.Dataset:
