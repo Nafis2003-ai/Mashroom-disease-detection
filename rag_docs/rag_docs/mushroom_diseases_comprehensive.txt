@@ -1,0 +1,80 @@
+COMPREHENSIVE MUSHROOM DISEASE GUIDE
+=====================================
+
+FUNGAL DISEASES OF CULTIVATED MUSHROOMS
+
+1. GREEN MOLD (Trichoderma species)
+Most economically important disease worldwide.
+Pathogens: T. harzianum, T. aggressivum, T. viride, T. koningii
+Host: All cultivated mushrooms; oyster, button, shiitake
+Symptoms: Green powdery sporulation on substrate and fruiting bodies
+Favorable conditions: Temperature 25-30°C, high humidity, high CO2, poor sanitation
+Disease cycle: Spores → germination → colonization → sporulation → spread via air/water/tools
+Economic loss: Can cause 50-100% crop loss in severe cases
+Control:
+  - Chemical: Thiabendazole, Prochloraz, Carbendazim (use with caution)
+  - Biological: Bacillus subtilis, Trichoderma atroviride (paradoxically used as biocontrol)
+  - Cultural: Proper sterilization, clean rooms, HEPA filtration, hygiene protocols
+
+2. WET BUBBLE DISEASE (Mycogone perniciosa)
+Pathogen: Mycogone perniciosa (fungus)
+Hosts: Button mushroom (Agaricus bisporus) primarily
+Symptoms: White fluffy mass at base; malformed, blob-like fruiting bodies; foul smell when mature
+Source: Contaminated casing soil, water, workers' clothing
+Control: Pasteurize casing soil (60°C, 8 hours), dicloran or thiabendazole spray
+
+3. DRY BUBBLE DISEASE (Lecanicillium fungicola)
+Pathogen: Lecanicillium fungicola (formerly Verticillium)
+Symptoms: Small, dry, distorted caps; brown marks on stalk; "drumstick" malformation
+Conditions: Fluctuating temperatures, excess humidity during pinning
+Control: Stable environmental conditions, thiabendazole spray to casing
+
+4. COBWEB DISEASE (Cladobotryum mycophilum)
+Pathogen: Cladobotryum mycophilum
+Symptoms: Coarse, gray cobweb-like mycelium spreading over caps; sunken brown necrotic spots
+Conditions: High humidity (>95%), poor air circulation
+Control: Reduce humidity to 85%, increase ventilation, salt or lime application
+
+5. BACTERIAL BLOTCH (Pseudomonas tolaasii)
+Pathogen: Pseudomonas tolaasii, P. reactans (bacteria)
+Symptoms: Yellow-brown blotches on cap surface; water-soaked lesions; pitting
+Conditions: Free water on cap surface, high temperature
+Control: Avoid wetting caps, improve air circulation, reduce temperature, copper-based bactericides
+
+6. MUSHROOM VIRUS X (La France Disease)
+Pathogen: Multiple mycoviruses (dsRNA viruses)
+Symptoms: Thin elongated stalks, small abnormal caps, abnormal gills, crop failure
+Spread: Infected spawn, spores, physical contact, insects
+Control: No treatment; prevention only — use certified virus-free spawn, strict hygiene
+
+7. BLOTCH DISEASES (various)
+Pathogens: Lecanicillium, Verticillium, Dactylium
+Symptoms: Brown spots, cap deformities, stalk lesions
+Control: Reduce humidity, improve air movement, remove affected fruiting bodies
+
+BACTERIAL DISEASES
+
+Bacterial Pit (Pseudomonas reactans)
+Symptoms: Small pits on cap with brown edges; yellow halo
+Control: Reduce surface moisture, copper hydroxide spray
+
+Blotch Complex
+Multiple Pseudomonas species in combination
+Symptoms: Irregular brown to black blotches
+Control: Strict hygiene, controlled watering, bactericide application
+
+PHYSIOLOGICAL (ABIOTIC) DISORDERS
+
+1. CO2 Injury: Long stalks, small caps — reduce CO2 with ventilation
+2. Temperature Stress: Brown cap, cracked surface — maintain stable temperature
+3. Low Humidity: Cracked, split caps — increase misting frequency
+4. Chemical Injury: Chlorine from tap water, cleaning agents — use distilled/filtered water
+5. Light Deficiency: Etiolated fruiting bodies — ensure 12h light/day
+
+INTEGRATED PEST MANAGEMENT (IPM) FOR MUSHROOMS
+1. Prevention-first approach — hygiene and environmental control
+2. Monitoring — daily inspection, record keeping
+3. Physical control — remove contaminated bags, clean rooms
+4. Biological control — beneficial microorganisms
+5. Chemical control — last resort, food-safe fungicides only
+6. Post-harvest — sterilize rooms between growing cycles

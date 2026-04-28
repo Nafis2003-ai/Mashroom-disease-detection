@@ -9,11 +9,15 @@ Healthy/
 Mixed_Infected/
 Single_Infected/
 
-# Trained model weights (large binary files)
-models/
+# Keep only primary model via Git LFS (others too large)
+models/EfficientNetV2S_best.keras
+models/DenseNet121_best.keras
+models/Custom_CNN_v2_best.keras
+models/EfficientNetV2S_CORN_D.keras
+models/*.h5
 
-# ChromaDB vector store (rebuilt by phase6_index.py)
-rag_db/
+# ChromaDB — include it (only 1.2 MB)
+# rag_db/
 
 # Python cache
 __pycache__/
