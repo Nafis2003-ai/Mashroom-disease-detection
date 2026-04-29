@@ -595,7 +595,7 @@ document.getElementById('stoggle').addEventListener('click', function() {
 # ─────────────────────────────────────────────────────────────────────────────
 BASE_DIR   = Path(__file__).parent
 MODELS_DIR = BASE_DIR / "models"
-DB_DIR     = str(BASE_DIR / "rag_db")
+DB_DIR     = str(BASE_DIR / "rag_db" / "rag_db")
 IMG_SIZE   = 224
 NUM_CLASSES = 3
 NUM_TASKS   = NUM_CLASSES - 1
