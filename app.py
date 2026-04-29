@@ -850,15 +850,11 @@ def overlay_heatmap(pil_img: Image.Image, heatmap: np.ndarray, alpha: float = 0.
 @st.cache_resource(show_spinner="Loading knowledge base…")
 def load_rag():
     try:
-        import torch, chromadb
-        from sentence_transformers import SentenceTransformer
-        device = "cpu"
-        if torch.cuda.is_available():
-            try: torch.cuda.set_per_process_memory_fraction(0.0)
-            except Exception: pass
+        import chromadb
+        from fastembed import TextEmbedding
         client     = chromadb.PersistentClient(path=DB_DIR)
         collection = client.get_collection(COLLECTION)
-        embedder   = SentenceTransformer(EMBED_MODEL, device=device)
+        embedder   = TextEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
         return collection, embedder
     except Exception as e:
         import traceback
@@ -876,7 +872,7 @@ def load_groq_client(api_key: str):
     return Groq(api_key=api_key)
 
 def rag_retrieve(query, collection, embedder, k=TOP_K):
-    q_emb   = embedder.encode([query], normalize_embeddings=True, device="cpu").tolist()
+    q_emb   = [list(embedder.embed([query]))[0].tolist()]
     results = collection.query(
         query_embeddings=q_emb, n_results=k,
         include=["documents", "metadatas", "distances"],
