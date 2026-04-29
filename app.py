@@ -859,7 +859,9 @@ def load_rag():
         collection = client.get_collection(COLLECTION)
         embedder   = SentenceTransformer(EMBED_MODEL, device=device)
         return collection, embedder
-    except Exception:
+    except Exception as e:
+        import traceback
+        st.session_state["rag_error"] = f"{type(e).__name__}: {e}\n\nDB_DIR={DB_DIR}\n\n{traceback.format_exc()}"
         return None, None
 
 @st.cache_resource(show_spinner="Connecting to Groq…")
@@ -1266,6 +1268,9 @@ def render_chat(rag_collection, rag_embedder, groq_client):
             unsafe_allow_html=True,
         )
         st.code("python phase6_scrape.py\npython phase6_index.py", language="bash")
+        if "rag_error" in st.session_state:
+            with st.expander("🔍 Debug info"):
+                st.code(st.session_state["rag_error"])
         return
 
     if groq_client is None:
