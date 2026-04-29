@@ -1,0 +1,24 @@
+2026-04-26 23:51:53.223 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 689, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\Mashroom-disease-detection\app.py", line 1255, in <module>
+    main()
+    ~~~~^^
+  File "F:\Mashroom-disease-detection\app.py", line 1200, in main
+    model, model_desc, model_mode, model_preproc = load_model()
+                                                   ~~~~~~~~~~^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\caching\cache_utils.py", line 281, in __call__
+    return self._get_or_create_cached_value(args, kwargs, spinner_message)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\caching\cache_utils.py", line 326, in _get_or_create_cached_value
+    return self._handle_cache_miss(cache, value_key, func_args, func_kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python314\Lib\site-packages\streamlit\runtime\caching\cache_utils.py", line 385, in _handle_cache_miss
+    computed_value = self._info.func(*func_args, **func_kwargs)
+  File "F:\Mashroom-disease-detection\app.py", line 549, in load_model
+    import tensorflow as tf
+ModuleNotFoundError: No module named 'tensorflow'
