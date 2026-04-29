@@ -21,6 +21,7 @@ Usage:
 import os, io, warnings
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 warnings.filterwarnings("ignore")
 
 import numpy as np
