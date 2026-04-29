@@ -851,10 +851,16 @@ def overlay_heatmap(pil_img: Image.Image, heatmap: np.ndarray, alpha: float = 0.
 def load_rag():
     try:
         import chromadb
-        from fastembed import TextEmbedding
+        from sklearn.feature_extraction.text import TfidfVectorizer
         client     = chromadb.PersistentClient(path=DB_DIR)
         collection = client.get_collection(COLLECTION)
-        embedder   = TextEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
+        # Load all stored documents and build a TF-IDF index (no model download needed)
+        stored     = collection.get(include=["documents", "metadatas"])
+        documents  = stored["documents"]
+        metadatas  = stored["metadatas"]
+        vectorizer = TfidfVectorizer(stop_words="english")
+        tfidf_matrix = vectorizer.fit_transform(documents)
+        embedder   = (vectorizer, tfidf_matrix, documents, metadatas)
         return collection, embedder
     except Exception as e:
         import traceback
@@ -872,12 +878,13 @@ def load_groq_client(api_key: str):
     return Groq(api_key=api_key)
 
 def rag_retrieve(query, collection, embedder, k=TOP_K):
-    q_emb   = [list(embedder.embed([query]))[0].tolist()]
-    results = collection.query(
-        query_embeddings=q_emb, n_results=k,
-        include=["documents", "metadatas", "distances"],
-    )
-    return results["documents"][0], results["metadatas"][0]
+    from sklearn.metrics.pairwise import cosine_similarity
+    import numpy as np
+    vectorizer, tfidf_matrix, documents, metadatas = embedder
+    q_vec  = vectorizer.transform([query])
+    scores = cosine_similarity(q_vec, tfidf_matrix)[0]
+    top_k  = np.argsort(scores)[::-1][:k]
+    return [documents[i] for i in top_k], [metadatas[i] for i in top_k]
 
 def rag_answer(groq_client, query, chunks, history=None):
     history_str = ""
